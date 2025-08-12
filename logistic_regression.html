@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logistic Regression</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+        nav {
+            background-color: #0676e7;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #1abc9c;
+        }
+        .container {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        p {
+            color: #34495e;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+        code {
+            background-color: #e9ecef;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        .section {
+            margin-bottom: 50px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0676e7;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#why">Why</a></li>
+            <li><a href="#when">When</a></li>
+            <li><a href="#how">How</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="home" class="section">
+            <h1>What is Logistic Regression?</h1>
+            <p>Logistic Regression is a popular supervised machine learning algorithm used for classification tasks. Instead of predicting a continuous value like in linear regression, it predicts the probability of a categorical outcome. This probability, always between 0 and 1, is then used to classify an observation into one of the categories.</p>
+            <p>The most common form is binary logistic regression, which predicts one of two outcomes (e.g., "yes" or "no", "spam" or "not spam"). There are also extensions for more than two categories, like multinomial and ordinal logistic regression.</p>
+        </section>
+
+        <section id="why" class="section">
+            <h2>Why use Logistic Regression?</h2>
+            <p>You should use logistic regression when you have a classification problem and you need a model that's simple, fast, and highly interpretable. It is particularly useful for:</p>
+            <ul>
+                <li><strong>Predicting binary outcomes:</strong> Its core purpose is to model the probability of an event with two possible results.</li>
+                <li><strong>Understanding feature importance:</strong> The model's coefficients provide insight into how each independent variable affects the log-odds of the outcome.</li>
+                <li><strong>Quick and simple implementation:</strong> It's a foundational algorithm that's easy to implement and doesn't require heavy computational resources.</li>
+            </ul>
+        </section>
+
+        <section id="when" class="section">
+            <h2>When to use Logistic Regression?</h2>
+            <p>Use logistic regression when your dependent variable (the outcome you're trying to predict) is categorical.</p>
+            <p>Examples include:</p>
+            <ul>
+                <li><strong>Healthcare:</strong> Predicting whether a tumor is malignant or benign.</li>
+                <li><strong>Finance:</strong> Classifying a loan application as high or low risk.</li>
+                <li><strong>Marketing:</strong> Predicting if a customer will click on an ad.</li>
+                <li><strong>Fraud Detection:</strong> Identifying a transaction as fraudulent or not.</li>
+            </ul>
+        </section>
+
+        <section id="how" class="section">
+            <h2>How does Logistic Regression work?</h2>
+            <p>Logistic regression uses the sigmoid function to map any real-valued number into a probability between 0 and 1.</p>
+            <ol>
+                <li><strong>Linear Combination:</strong> Compute z = β0 + β1x1 + β2x2 + ... + βnxn</li>
+                <li><strong>Sigmoid Transformation:</strong> Apply P(outcome=1) = 1 / (1 + e^(-z))</li>
+                <li><strong>Classification:</strong> Apply threshold (e.g., 0.5) to determine the class.</li>
+                <li><strong>Learning:</strong> Adjust weights using optimization methods like gradient descent.</li>
+            </ol>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Logistic Regression Tutorial. Md Kalam & Shaziya Naaz</p>
+    </footer>
+</body>
+</html>
